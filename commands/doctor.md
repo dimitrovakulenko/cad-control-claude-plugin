@@ -6,7 +6,8 @@ Check the Control bridge to AutoCAD and report the result in a few lines. Follow
 `cad-control:autocad-setup` skill for what each failure means.
 
 1. Call `list_instances` to find a running AutoCAD and the loaded Control plugin.
-2. Call `account` to check sign-in and remaining quota.
+2. Call `account` with `action: "status"` to check sign-in and remaining quota. Never
+   `login` — that opens a browser, and this command only reports.
 3. If an instance was found, call `documents` to list the open drawings.
 
 Then say, in one short block: whether AutoCAD is reachable, whether the user is signed

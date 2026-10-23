@@ -7,8 +7,9 @@ description: Get Control talking to a live AutoCAD session, and fix it when it i
 
 Control has three moving parts. Almost every failure is one of them being absent:
 
-1. **The MCP server** — launched by the client through `npx`, so it is running whenever
-   the AutoCAD tools are listed at all.
+1. **The MCP server** — installed into the plugin's own `node_modules` when the plugin
+   is installed or updated, and run from there, so it is running whenever the AutoCAD
+   tools are listed at all.
 2. **The ObjectARX plugin inside AutoCAD** — installed by the server's launcher, but
    loaded only when AutoCAD **starts**. A fresh install needs an AutoCAD restart.
 3. **A signed-in account** — one browser approval per machine, shared by every MCP
@@ -42,8 +43,11 @@ you can verify yourself.
 | `revoked` | That machine's key was revoked | Sign in again |
 | `feedback_unavailable` | Issue uploads are switched off by `CONTROL_FEEDBACK_URL=""` | Nothing to fix; other tools still work |
 
-Diagnostics (`commands`, `list_instances`, `console`, `cancel`, `ping`) are never
-metered, so they keep working when a quota refusal blocks everything else.
+Diagnostics (`commands`, `list_instances`, `console`, `cancel`) are never metered, so
+they keep working when a quota refusal blocks everything else. `commands` and
+`list_instances` go further and need no account at all — they never reach AutoCAD, so
+they still answer "is the plugin installed, is AutoCAD running" while sign-in is the
+thing that is broken.
 
 ## When a call hangs or returns busy
 

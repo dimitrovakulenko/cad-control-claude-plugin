@@ -65,10 +65,12 @@ where it says otherwise.
   resulting key is stored in the OS credential store (macOS Keychain, Windows
   Credential Manager) and exchanged for a short-lived signed lease plus an allowance of
   calls. Individual tool calls are metered locally, with no network round trip each.
-- **Issue reporting is opt-in per report.** `report_issue` emails a report, and selected
-  attachments, to the maintainer. You review the report and approve each attachment
-  before anything is sent. To switch uploads off entirely, set the server's
-  `CONTROL_FEEDBACK_URL` environment variable to an empty string.
+- **Issue reporting is opt-in per report, and uploads off your machine.** `report_issue`
+  POSTs the report and the attachments you selected over HTTPS to the vendor's feedback
+  endpoint, which forwards them to the maintainer by email. You review the report and
+  approve each attachment before anything leaves. This is the only tool that sends
+  anything but licence traffic off the machine. To switch uploads off entirely, set the
+  server's `CONTROL_FEEDBACK_URL` environment variable to an empty string.
 
 ## Sign in
 
@@ -79,8 +81,9 @@ shows what you have, `CONTROLACCOUNT` opens your account page, `CONTROLLOGOUT` f
 the key. No key is ever displayed or pasted, so your MCP client configuration holds no
 secret.
 
-Diagnostics — `commands`, `list_instances`, `console`, `cancel` and `ping` — are never
-metered, so a stuck session can always be inspected and cleared.
+Diagnostics — `commands`, `list_instances`, `console` and `cancel` — are never metered,
+so a stuck session can always be inspected and cleared. The first two need no account
+at all, so a failed sign-in can still be diagnosed.
 
 ## Links
 
