@@ -1,0 +1,21 @@
+{
+  "name": "cad-control",
+  "displayName": "Control for AutoCAD",
+  "version": "0.1.24",
+  "description": "Drive a live AutoCAD session from Claude: read and edit the drawing database, run commands and AutoLISP, plot to PDF, and capture the drawing as an image.",
+  "author": {
+    "name": "Dmytro Vakulenko",
+    "url": "https://cad-control.dmytro-prototypes.net"
+  },
+  "homepage": "https://cad-control.dmytro-prototypes.net",
+  "repository": "https://github.com/dimitrovakulenko/cad-control-claude-plugin",
+  "keywords": [
+    "autocad",
+    "cad",
+    "dwg",
+    "drafting",
+    "objectarx",
+    "autolisp"
+  ],
+  "icon": "./logo.svg"
+}

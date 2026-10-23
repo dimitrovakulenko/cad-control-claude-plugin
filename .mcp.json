@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cad-control": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@dmytro-prototypes/cad-control-mcp-server@0.1.24"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Control marionette</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 11 51 24M51 11 13 24" stroke="#20242e" stroke-width="9"/>
+    <path d="M13 11 51 24M51 11 13 24" stroke="#705ee8" stroke-width="5"/>
+    <path d="M18 20v13M32 21v4M46 20v13" stroke="#20242e" stroke-width="5"/>
+    <path d="M18 20v13M32 21v4M46 20v13" stroke="#705ee8" stroke-width="2.5"/>
+    <path d="m27 39-9-6-2 10 9 5M37 39l9-6 2 10-9 5" stroke="#20242e" stroke-width="7"/>
+    <path d="m27 39-9-6-2 10 9 5M37 39l9-6 2 10-9 5" stroke="#705ee8" stroke-width="3.5"/>
+  </g>
+  <circle cx="32" cy="31" r="7" fill="#f7fbfc" stroke="#20242e" stroke-width="3.5"/>
+  <path d="M27 39h10l3 18H24z" fill="#705ee8" stroke="#20242e" stroke-width="3.5" stroke-linejoin="round"/>
+
+</svg>

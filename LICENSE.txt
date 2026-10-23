@@ -1,0 +1,208 @@
+Control MCP Server — End User Licence Agreement
+
+Version 2026-10-22
+
+This agreement covers the Control software you install and run on your own computer. The
+hosted portal and licensing API are covered separately by the Terms of Service, and what
+we store about you by the Privacy Policy.
+
+1. Who you are contracting with
+
+Control is supplied by Dmytro Vakulenko, a freelance software developer established in
+Belgium, at Franklin Rooseveltlaan 19, Ghent, Belgium. Enterprise and VAT number BE
+1018.539.293. Telephone +32 492 92 86 95. Email dmytro.vakulenko.mail@gmail.com — write
+there about anything in this agreement, including a complaint, and we will reply to the
+address you write from.
+
+In this agreement "we" and "us" mean that person, and "you" means the individual or
+organisation accepting it. Where a term applies only if you are a consumer — someone
+acting outside their trade, business or profession — it says so.
+
+2. What is licensed
+
+The software licensed here is:
+
+control-mcp-server — the MCP server executable your AI assistant launches;
+the Control AutoCAD plugin — the module AutoCAD loads to accept instructions from that
+server.
+
+Together, "the Software". Autodesk® and AutoCAD® are trademarks of Autodesk, Inc.; this
+product is not affiliated with or endorsed by Autodesk, and your use of AutoCAD is
+governed by your own agreement with them.
+
+3. Which build this licence covers
+
+This licence covers a copy of the Software you obtained from us — from a Control release
+on our releases page or from the npm package we publish — and no other copy.
+
+Where a release carries a manifest — a file named SHA256SUMS… listing the SHA-256 digest
+of each file in that release — you can check what you have against it before you run it,
+and we encourage it. Today the Windows releases carry one. Where we have not published a
+manifest for a channel, you cannot perform that check, and we do not treat its absence
+as evidence against you.
+
+A build you did not get from us, or one whose digest does not match a manifest we
+published, is not licensed under this agreement, is not supported, and is not something
+we can make any statement about — including about what it does to your drawings.
+
+4. The licence we grant you
+
+For as long as your Control account is in good standing, we grant you a non-exclusive,
+non-transferable, worldwide licence to install and run the Software on computers you own
+or control, for the purpose of driving AutoCAD documents you are entitled to work on.
+The licence is for you: what your plan limits is how many calls you may make, per day
+and per week, and those figures are shown on your plan in the portal.
+
+This is a licence, not a sale. We and our licensors keep all intellectual property
+rights in the Software.
+
+5. What you may not do — and what you may, whatever this says
+
+You may not:
+
+redistribute, sell, rent, sublicense or publish the Software;
+remove or alter its copyright or licence notices;
+circumvent, disable or falsify the licence check, the device registration or the usage
+metering, or pass your credentials to other people so that they use the Software on your
+plan;
+present a modified build as Control, or distribute a build whose digest is not in a
+manifest we published.
+
+Rights this agreement does not take away. Nothing above restricts what Articles 5 and 6
+of Directive 2009/24/EC give you as a lawful acquirer, and any term here that would is
+void to that extent. In particular you may make a back-up copy where that is necessary
+to use the Software; you may observe, study and test how it works while running it; and
+you may decompile it so far as that is indispensable to make independently created
+software interoperate with it. If interoperability is what you are after, ask us first —
+we would rather document the interface than have you take it apart.
+
+6. Open source components
+
+The Software includes third-party components under their own open source licences. Those
+licences govern those components, and where one grants you more than this agreement
+does, it wins. Ask us at dmytro.vakulenko.mail@gmail.com for the current list of
+components and their notices.
+
+7. Conformity — what the Software has to do
+
+We supply the Software in conformity with this agreement and with what you can
+reasonably expect of it. If it does not conform, you are entitled to have it brought
+into conformity, and where that fails, is disproportionate, is unduly delayed, or we do
+not do it, to a proportionate price reduction or to end the contract and be refunded.
+Once you pay for a plan, Directive (EU) 2019/770 gives you these rights by law and you
+benefit from the legal guarantee of conformity; while the alpha is free we commit to
+them anyway. Nothing in this agreement reduces them.
+
+What you can reasonably expect is shaped by what we say plainly: Control is alpha
+software, sold as such. It changes often, and an assistant driving AutoCAD can make a
+change you did not intend. Review what it does before you rely on it, and keep your
+drawings under version control or backup — the same care you would take with a
+colleague's edit.
+
+8. Updates
+
+For as long as you are entitled to the Software, we will supply the updates — including
+security updates — needed to keep it in conformity, and tell you about them. If you
+choose not to install an update we have made available and told you about, we are not
+responsible for a lack of conformity that the update alone would have fixed.
+
+9. Your right to withdraw, and what waives it
+
+If you are a consumer, you normally have 14 days to withdraw from a contract for digital
+content, without giving a reason.
+
+Because the Software is supplied for download immediately, that right can end once
+supply begins — but only if three things are true. You must expressly request that
+supply begin, you must acknowledge that you lose your right of withdrawal when it does,
+and we must send you confirmation of the contract on a durable medium — an email you can
+keep. Two out of three is not enough; the right survives.
+
+Checkout collects all three for a paid plan: the box you tick is both your express
+request and your acknowledgement, and the invoice emailed to you afterwards is the
+durable-medium confirmation. Leave the box unticked and the 14 days run normally.
+Nothing waives the right on a free plan, where there is nothing to refund. To withdraw,
+you need only tell us so: write to dmytro.vakulenko.mail@gmail.com, or use the form
+below. We will refund you within 14 days of being told.
+
+Model withdrawal form — you may copy this, but need not.
+
+To Dmytro Vakulenko, Franklin Rooseveltlaan 19, Ghent, Belgium,
+dmytro.vakulenko.mail@gmail.com: I hereby give notice that I withdraw from my contract
+for the supply of the following digital content: ______. Ordered on: ______. Name of
+consumer: ______. Address of consumer: ______. Date: ______.
+
+10. Data
+
+The Software sends us an API key, a device identifier, a count of calls, and the build
+version it is running; when you sign a machine in, it also sends the name that machine
+reports for itself. These licensing requests do not include your drawings, file paths,
+prompts or tool arguments. If you choose to submit a support report, its supplied text,
+selected attachments and any opted-in contact address are emailed to the maintainer and
+retained for three months from receipt.
+
+The npm launcher installs or updates the plugin in your Autodesk auto-load folder and
+removes legacy CADBridge bundles there. The plugin enables AutoCAD command logging so
+the MCP server can read local command output. These log files remain on your computer;
+Control does not automatically delete them or upload them to us. Your MCP client
+controls how it shares tool results with its AI provider. The Privacy Policy describes
+these flows and what we retain.
+
+11. Our liability
+
+We are fully liable for death or personal injury caused by our negligence, for damage
+caused intentionally or by gross negligence, and for anything else the law does not
+permit us to limit — including our obligations under § 7.
+
+Where we fail to perform one of the main obligations of this agreement, our liability is
+not limited. For anything else, and except where we acted intentionally or with gross
+negligence, our liability is limited to the loss that was foreseeable and typical for a
+contract of this kind. If you are not a consumer, that limit applies to all our
+obligations. Nothing here limits liability we cannot lawfully limit under the law of
+your country of residence.
+
+12. Term and ending it
+
+This licence runs while your account does. You may stop using the Software and delete it
+at any time. We may end this licence if you materially breach it and do not put the
+breach right within 14 days of us asking — for a breach of § 5 that is causing ongoing
+harm, we may suspend access immediately and tell you why. When the licence ends you must
+stop using the Software and remove it; the second paragraph of § 4 (ownership), and §§
+11 and 13, survive.
+
+13. Law and disputes
+
+This agreement is governed by Belgian law. If you are a consumer, that choice does not
+deprive you of the protection of the mandatory rules of the country where you habitually
+reside, and you may bring proceedings before the courts there or before the Belgian
+courts — we may only sue you in the courts of your own country of residence.
+
+We would rather settle a complaint directly, so write to dmytro.vakulenko.mail@gmail.com
+first. If that does not resolve it, a consumer may refer the dispute to the Belgian
+federal Consumer Mediation Service (Service de Médiation pour le Consommateur /
+Consumentenombudsdienst), Boulevard du Roi Albert II 8 bte 1, 1000 Brussels —
+consumerombudsman.be, +32 2 702 52 20, contact@mediationconsommateur.be. We are not
+obliged to take part in an out-of-court settlement procedure and do not commit in
+advance to doing so.
+
+14. Changes
+
+We may update this agreement as the product matures. A change to what you agreed to asks
+you to accept the new version before you can create a new key or connect a new device;
+connections you already have keep working. The version you accepted, and when, is
+recorded against your account.
+
+We may also change the Software itself, or what a plan includes, where there is a valid
+reason — a new technical environment, a security fix, more users to serve. It will not
+cost you extra, and we will tell you clearly and in advance. If a change makes the
+Software materially worse for you than only slightly, you may end this agreement free of
+charge within 30 days of being told or of the change taking effect, whichever is later,
+and we will refund the unused part of anything you paid — unless we keep the unmodified
+version available to you at no extra cost.
+
+Published source: https://cad-control.dmytro-prototypes.net/license
+
+References
+Terms of Service: https://cad-control.dmytro-prototypes.net/terms
+Privacy Policy: https://cad-control.dmytro-prototypes.net/privacy
+our releases page: https://github.com/dimitrovakulenko/CADBridge/releases
+consumerombudsman.be: https://consumerombudsman.be/

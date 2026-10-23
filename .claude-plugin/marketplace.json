@@ -1,0 +1,14 @@
+{
+  "name": "cad-control",
+  "owner": {
+    "name": "Dmytro Vakulenko",
+    "url": "https://cad-control.dmytro-prototypes.net"
+  },
+  "description": "Control for AutoCAD — drive a live AutoCAD session from Claude.",
+  "plugins": [
+    {
+      "name": "cad-control",
+      "source": "./"
+    }
+  ]
+}
