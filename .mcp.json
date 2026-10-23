@@ -1,10 +1,9 @@
 {
   "mcpServers": {
     "cad-control": {
-      "command": "npx",
+      "command": "node",
       "args": [
-        "-y",
-        "@dmytro-prototypes/cad-control-mcp-server@0.1.24"
+        "${CLAUDE_PLUGIN_ROOT}/node_modules/@dmytro-prototypes/cad-control-mcp-server/bin/cli.js"
       ]
     }
   }

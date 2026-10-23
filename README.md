@@ -36,10 +36,15 @@ launch does the rest; `/cad-control:doctor` walks you through it and verifies ea
 Control is a local bridge, and everything below happens on your own machine except
 where it says otherwise.
 
-- **Launches the MCP server through `npx`.** The plugin runs
-  `npx -y @dmytro-prototypes/cad-control-mcp-server@0.1.24`, pinned to that exact
-  version. npm downloads that package and the one platform binary it needs
-  (`...-darwin-arm64` or `...-win32-x64`) from the public npm registry.
+- **Installs the MCP server from a lockfile.** The plugin's own `package.json`
+  declares `@dmytro-prototypes/cad-control-mcp-server` at one exact version, and
+  `package-lock.json` records its registry source and integrity hash. Claude Code
+  installs it into the plugin directory when you install or update the plugin, with
+  lifecycle scripts disabled, and then runs the installed file directly:
+  `node ${CLAUDE_PLUGIN_ROOT}/node_modules/@dmytro-prototypes/cad-control-mcp-server/bin/cli.js`.
+  npm fetches that package and the one platform binary it needs
+  (`...-darwin-arm64` or `...-win32-x64`) from the public npm registry; nothing is
+  downloaded at any later launch.
 - **Copies the server binary to a stable path**, so npm cache changes do not break a
   running client: `~/Library/Application Support/Control/bin` on macOS,
   `%LOCALAPPDATA%\Programs\Control` on Windows.

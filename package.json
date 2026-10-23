@@ -1,0 +1,9 @@
+{
+  "name": "cad-control-plugin",
+  "version": "0.1.24",
+  "private": true,
+  "description": "Dependency manifest for the Control plugin: Claude Code installs this lockfile when the plugin is installed.",
+  "dependencies": {
+    "@dmytro-prototypes/cad-control-mcp-server": "0.1.24"
+  }
+}
