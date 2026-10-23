@@ -24,7 +24,7 @@ Supported releases: AutoCAD 2025, 2026 and 2027.
 
 1. AutoCAD 2025, 2026 or 2027 installed locally (Windows x64 or Apple Silicon macOS).
 2. A Control account. Control requires sign-in; see [Sign in](#sign-in).
-3. Node.js 18 or newer, so that `npx` can launch the server.
+3. Node.js 18 or newer, which is what installs and runs the server.
 
 ## Install
 
@@ -85,4 +85,9 @@ metered, so a stuck session can always be inspected and cleared.
 ## Links
 
 - Product and documentation: <https://cad-control.dmytro-prototypes.net>
-- Licence terms: `LICENSE.txt` in this folder
+- [Privacy](https://cad-control.dmytro-prototypes.net/privacy) — everything the
+  licensing service stores, why, and for how long
+- [Terms of Service](https://cad-control.dmytro-prototypes.net/terms) — the account,
+  the portal and billing
+- Licence terms for the software itself: `LICENSE.txt` in this folder, also published
+  at <https://cad-control.dmytro-prototypes.net/license>
